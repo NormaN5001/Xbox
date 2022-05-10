@@ -13,16 +13,8 @@ import Seta from "./img/seta.png"
 import Seta2 from "./img/seta2.png"
 
 
-const GlobalStyle = createGlobalStyle`
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-`
 const Main = styled.section`
   position: relative;
-  border: solid green 1px;
   margin: 60px 5vw 0 5vw;
 `
 const Title = styled.h1`
@@ -90,7 +82,6 @@ const ImgGames = styled.img`
 `
 const Questions = styled.section`
   margin-top: 150px;
-  height: 60vh;
 `
 const TitleQuestion = styled.h2`
   color: #9BF00B;
@@ -225,7 +216,7 @@ openDropdown3 = () =>{
 
           <QuestionTwo onClick={this.openDropdown2}>
             <p>O que está incluído no Xbox Series X?</p>
-            <Arrow src={this.state.dropDown1===false ? Seta : Seta2} alt="Imagem setinha dropdown"/>
+            <Arrow src={this.state.dropDown2===false ? Seta : Seta2} alt="Imagem setinha dropdown"/>
             {this.state.dropDown2 && (
               <DropOpen>
                 <p>Um console Xbox Series X, controle, cabo HDMI de alta velocidade e cabo de alimentação estão inclusos.</p>
@@ -237,7 +228,7 @@ openDropdown3 = () =>{
 
           <QuestionThree onClick={this.openDropdown3}>
             <p>Como sei se minha TV é compatível com 4K?</p>
-            <Arrow src={this.state.dropDown1===false ? Seta : Seta2} alt="Imagem setinha dropdown"/>
+            <Arrow src={this.state.dropDown3===false ? Seta : Seta2} alt="Imagem setinha dropdown"/>
             {this.state.dropDown3 && (
               <DropOpen>
                 <p>É preciso ter, pelo menos, uma entrada HDMI 2.1 (que suporta reprodução em 4K);</p>

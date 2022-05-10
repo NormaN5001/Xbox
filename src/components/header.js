@@ -4,13 +4,6 @@ import { createGlobalStyle } from 'styled-components'
 
 import Logo from './img/logo-xbox.png'
 
-const GlobalStyle = createGlobalStyle`
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-`
 const Header = styled.section`
   margin: 0 5vw 0 5vw;
   height: 70px;
@@ -32,6 +25,7 @@ const ItemLista = styled.li`
   &:hover{
     font-weight: 700;
     cursor: pointer;
+    text-decoration: underline 2px;
   }
 `
 const Button = styled.button`
