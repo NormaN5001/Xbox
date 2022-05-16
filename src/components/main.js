@@ -16,42 +16,75 @@ import Seta2 from "./img/seta2.png"
 const Main = styled.section`
   position: relative;
   margin: 60px 5vw 0 5vw;
+  @media(max-width: 768px){
+    margin: 20px 5vw 0 5vw;
+  }
 `
 const Title = styled.h1`
   color: white;
   text-align: center;
   font-size: 4vh;
   font-weight: 600;
+  @media(max-width: 768px){
+    font-size: 7vh;
+  }
 `
 const SubTitle = styled.p`
-  margin-top: 25px;
+  margin-top: 7px;
   color: #9BF00B;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.85vh;
   font-weight: 700;
+  @media(max-width: 768px){
+    font-size: 3vh;
+  }
 `
 const XboxImg = styled.img`
   position: absolute;
   top: 200px;
   width: 100%;
   z-index: 3;
+  @media(max-width: 768px){
+    top: 130px;
+    width: 90vw;
+  }
 `
 const EffectImg = styled.img`
   margin-bottom: 100px;
   width: 100%;
+  @media(max-width: 768px){
+    display: none;
+  }
 `
 const Control = styled.section`
+  border: solid white 1px;
   position: relative;
   display: flex;
   justify-content: space-between;
   height: 26.5vh;
+  @media(max-width: 768px){
+    position: relative;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 430px;
+    div{
+      border: solid white 1px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
 `
 const TitleControl = styled.h2`
   color: #9BF00B;
   font-weight: 600;
   font-size: 3.9vh;
-  width: 10vw;
+  @media(max-width: 470px){
+    width: 40vw;
+  }
 `
 const TCW = styled.span`
   color: white;
@@ -62,10 +95,18 @@ const AboutControl = styled.p`
   font-weight: 500;
   font-size: 1.8vh;
   width: 40vw;
+  @media(max-width: 768px){
+    text-align: center;
+    width: 80vw;
+  }  
 `
 const ControlImg = styled.img`
   width: 400px;
   height: 240px;
+  @media(max-width: 1300px){
+    width: 300px;
+    height: 190px;
+  }
 `
 const Exclusive = styled.section`
   margin-top: 130px;
@@ -74,10 +115,15 @@ const Exclusive = styled.section`
   flex-wrap: wrap;
 `
 const ImgGames = styled.img`
-  width: 370px;
+  width: 350px;
+  height: 600px;
   margin-top: 30px;
   &:hover{
     cursor: pointer;
+  }
+  @media(max-width: 1600px){
+    width: 320px;
+    height: 550px;
   }
 `
 const Questions = styled.section`

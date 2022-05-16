@@ -5,6 +5,7 @@ import { createGlobalStyle } from 'styled-components'
 import Logo from './img/logo-xbox.png'
 
 const Header = styled.section`
+border: solid white 1px;
   margin: 0 5vw 0 5vw;
   height: 70px;
   display: flex;
@@ -13,6 +14,17 @@ const Header = styled.section`
   img{
     cursor: pointer;
   }
+  @media(max-width: 1000px){
+    margin: 0;
+  }
+  @media(max-width: 768px){
+    margin: 0 5vw 0 5vw;
+    flex-direction: column;
+    height: 200px;
+    img{
+      margin-top: 10px;
+    }
+  }
 `
 const Lista = styled.ul`
   color: white;
@@ -20,7 +32,7 @@ const Lista = styled.ul`
   list-style: none;
 `
 const ItemLista = styled.li`
-  margin-left: 35px;
+  margin-left: 25px;
   font-size: 2vh;
   font-weight:600;
   text-transform: uppercase;
@@ -29,6 +41,24 @@ const ItemLista = styled.li`
     cursor: pointer;
     text-decoration: underline 2px;
     color: #9BF00B;
+  }
+  @media(max-width: 1000px){
+    font-size: 1.6vh;
+    margin-left: 20px;
+  }
+  @media(max-width: 768px){
+    background-color: #272727;
+    text-align: center;
+    line-height: 28px;
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+    &:hover{
+    cursor: pointer;
+    background-color: #9BF00B;
+    color: #181818;
+    text-decoration: none;
+    }
   }
 `
 const Button = styled.button`
@@ -41,15 +71,18 @@ const Button = styled.button`
   font-weight: 700;
   font-size: 1.8vh;
   transition: 0.7s;
-
   &:hover{
     cursor: pointer;
     background-color: #1BF01E;
   }
-
   @media(max-width: 1000px){
-    width: 15vw;
+    width: 170px;
     height: 35px;
+    font-size: 1.6vh;
+  }
+  @media(max-width: 768px){
+    width: 80vw;
+    height: 45px;
   }
 `
 
