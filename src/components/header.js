@@ -10,6 +10,9 @@ const Header = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  img{
+    cursor: pointer;
+  }
 `
 const Lista = styled.ul`
   color: white;
@@ -18,14 +21,14 @@ const Lista = styled.ul`
 `
 const ItemLista = styled.li`
   margin-left: 35px;
-  font-size: 1.8vh;
+  font-size: 2vh;
   font-weight:600;
   text-transform: uppercase;
-
+  transition: 0.4s;
   &:hover{
-    font-weight: 700;
     cursor: pointer;
     text-decoration: underline 2px;
+    color: #9BF00B;
   }
 `
 const Button = styled.button`
@@ -36,17 +39,17 @@ const Button = styled.button`
   background-color: #9BF00B;
   color: #0C0C0C;
   font-weight: 700;
-  font-size: 1.55vh;
+  font-size: 1.8vh;
   transition: 0.7s;
 
   &:hover{
     cursor: pointer;
-    background-color: green;
-    transform: scale(1.05);
+    background-color: #1BF01E;
   }
 
   @media(max-width: 1000px){
-    width: 16.5vw;
+    width: 15vw;
+    height: 35px;
   }
 `
 
