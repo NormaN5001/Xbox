@@ -5,7 +5,6 @@ import { createGlobalStyle } from 'styled-components'
 import Logo from './img/logo-xbox.png'
 
 const Header = styled.section`
-border: solid white 1px;
   margin: 0 5vw 0 5vw;
   height: 70px;
   display: flex;
@@ -18,7 +17,7 @@ border: solid white 1px;
     margin: 0;
   }
   @media(max-width: 768px){
-    margin: 0 5vw 0 5vw;
+ 
     flex-direction: column;
     height: 200px;
     img{
@@ -30,6 +29,10 @@ const Lista = styled.ul`
   color: white;
   display: flex;
   list-style: none;
+  @media(max-width: 768px){
+    width: 100%;
+    justify-content: space-evenly;
+  }
 `
 const ItemLista = styled.li`
   margin-left: 25px;
@@ -47,6 +50,7 @@ const ItemLista = styled.li`
     margin-left: 20px;
   }
   @media(max-width: 768px){
+    margin: 0;
     background-color: #272727;
     text-align: center;
     line-height: 28px;
@@ -59,6 +63,15 @@ const ItemLista = styled.li`
     color: #181818;
     text-decoration: none;
     }
+  }
+  @media(max-width: 425px){
+    width: 70px;
+    height: 28px;
+    line-height: 26px;
+    font-size: 1.3vh;
+  }
+  @media(max-width: 320px){
+    font-size: 1.2vh;
   }
 `
 const Button = styled.button`

@@ -26,7 +26,7 @@ const Title = styled.h1`
   font-size: 4vh;
   font-weight: 600;
   @media(max-width: 768px){
-    font-size: 7vh;
+    font-size: 5vh;
   }
 `
 const SubTitle = styled.p`
@@ -37,7 +37,7 @@ const SubTitle = styled.p`
   font-size: 1.85vh;
   font-weight: 700;
   @media(max-width: 768px){
-    font-size: 3vh;
+    font-size: 2vh;
   }
 `
 const XboxImg = styled.img`
@@ -58,7 +58,6 @@ const EffectImg = styled.img`
   }
 `
 const Control = styled.section`
-  border: solid white 1px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -70,7 +69,6 @@ const Control = styled.section`
     align-items: center;
     margin-top: 430px;
     div{
-      border: solid white 1px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -84,6 +82,12 @@ const TitleControl = styled.h2`
   font-size: 3.9vh;
   @media(max-width: 470px){
     width: 40vw;
+  }
+  @media(max-width: 425px){
+    width: 50vw;
+  }
+  @media(max-width: 375px){
+    width: 60vw;
   }
 `
 const TCW = styled.span`
